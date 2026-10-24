@@ -1,0 +1,37 @@
+{
+    "version": "0.1.1",
+    "description": "The Claude Code statusline: 49 themes, an animated theme picker, a theme per project or branch",
+    "homepage": "https://github.com/adrien-ln/agentline",
+    "license": "MIT",
+    "suggest": {
+        "Nerd Font": "nerd-fonts/FiraCode-NF"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.1.1/agentline_0.1.1_windows_amd64.zip",
+            "hash": "cb53f058463b239ef52f621b5f7d394a13fcf8892b420a490e045c383c3188c4"
+        },
+        "arm64": {
+            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.1.1/agentline_0.1.1_windows_arm64.zip",
+            "hash": "8cfe57a9e1efc9f9ae19e7a7ddba0b75d85ee62f2fed1faf4e3f54639c04fd64"
+        }
+    },
+    "bin": "agentline.exe",
+    "post_install": "& \"$dir\\agentline.exe\" install --in-place",
+    "pre_uninstall": "& \"$dir\\agentline.exe\" uninstall --in-place",
+    "notes": "The statusline is declared in ~/.claude/settings.json (a .bak copy is kept). Your terminal needs a Nerd Font. Pick a theme with: agentline",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/adrien-ln/agentline/releases/download/v$version/agentline_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/adrien-ln/agentline/releases/download/v$version/agentline_$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
