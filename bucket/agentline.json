@@ -1,5 +1,5 @@
 {
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "The Claude Code statusline: 49 themes, an animated theme picker, a theme per project or branch",
     "homepage": "https://github.com/adrien-ln/agentline",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.1.1/agentline_0.1.1_windows_amd64.zip",
-            "hash": "cb53f058463b239ef52f621b5f7d394a13fcf8892b420a490e045c383c3188c4"
+            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.2.0/agentline_0.2.0_windows_amd64.zip",
+            "hash": "9f77ca51b6b4ce57e19f2165736fb8a0d6f040093db7d91449db20b9495ab883"
         },
         "arm64": {
-            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.1.1/agentline_0.1.1_windows_arm64.zip",
-            "hash": "8cfe57a9e1efc9f9ae19e7a7ddba0b75d85ee62f2fed1faf4e3f54639c04fd64"
+            "url": "https://github.com/adrien-ln/agentline/releases/download/v0.2.0/agentline_0.2.0_windows_arm64.zip",
+            "hash": "c4f861b1c389db2a24e35a1dc3ca855bf9e6f92bb5f8acb7c1af489b6c54a340"
         }
     },
     "bin": "agentline.exe",
